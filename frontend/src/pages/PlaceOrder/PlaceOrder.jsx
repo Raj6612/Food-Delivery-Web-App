@@ -74,14 +74,14 @@ const PlaceOrder = () => {
 
           if (res.data.success) {
             clearCart();
-            navigate("http://localhost:5173/myorders");
+            navigate("https://food-delivery-web-app-frontend-wdse.onrender.com/myorders");
           } else {
             alert("Payment not successful");
-            navigate("http://localhost:5173/cart");
+            navigate("https://food-delivery-web-app-frontend-wdse.onrender.com/cart");
           }
         } catch (error) {
           alert("Payment not successful");
-          navigate("http://localhost:5173/cart");
+          navigate("https://food-delivery-web-app-frontend-wdse.onrender.com/cart");
         }
       },
 
